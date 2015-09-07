@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Search Algorithm</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<div id="jsc-chart" style="width: 900px; height: 500px"></div>
+
+	<table class="table" style="width:900px;">
+		<caption>探索アルゴリズムごとの計測時間結果（ミリ秒）</caption>
+		<tr>
+			<th>探索回数</th>
+			<th><span class="searchcount1"></th>
+			<th><span class="searchcount2"></th>
+			<th><span class="searchcount3"></th>
+			<th><span class="searchcount4"></th>
+		</tr>
+		<tr>
+			<th>IndexOf関数</th>
+			<td><span class="indexof1"></span></td>
+			<td><span class="indexof2"></span></td>
+			<td><span class="indexof3"></span></td>
+			<td><span class="indexof4"></span></td>
+		</tr>
+		<tr>
+			<th>リニアサーチ</th>
+			<td><span class="linearsearch1"></span></td>
+			<td><span class="linearsearch2"></span></td>
+			<td><span class="linearsearch3"></span></td>
+			<td><span class="linearsearch4"></span></td>
+		</tr>
+		<tr>
+			<th>バイナリサーチ</th>
+			<td><span class="binarysearch1"></span></td>
+			<td><span class="binarysearch2"></span></td>
+			<td><span class="binarysearch3"></span></td>
+			<td><span class="binarysearch4"></span></td>
+		</tr>
+		<tr>
+			<th>ハッシュ探索</th>
+			<td><span class="hashsearch1"></span></td>
+			<td><span class="hashsearch2"></span></td>
+			<td><span class="hashsearch3"></span></td>
+			<td><span class="hashsearch4"></span></td>
+		</tr>
+	</table>
+	<div>
+		<p>データ探索時の配列には<span class="datacount">????</span>個のデータが含まれています。</p>
+		<p>バイナリサーチの探索用データは昇順（もしくは降順）が保証されている必要があります。</p>
+		<p></p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript"
+          src="https://www.google.com/jsapi?autoload={
+            'modules':[{
+              'name':'visualization',
+              'version':'1',
+              'packages':['corechart']
+            }]
+          }"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
