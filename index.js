@@ -141,7 +141,7 @@ ALGORITHM.SEARCH.prototype = {
   linearSearch: function ( num ) {
     var index = -1;
     for( var i = 0, len = this.dataList.length;i < len;i++ ) {
-      if( i === num ) {
+      if( this.dataList[i] === num ) {
         index = i;
         break;
       }
@@ -155,12 +155,13 @@ ALGORITHM.SEARCH.prototype = {
 
     while( head <= tail ) {
       var center = Math.floor(( head + tail ) / 2);
+      var centerVal = this.dataList[center];
 
-      if( center === num ) {
+      if( centerVal === num ) {
         index = center;
         break;
       }
-      if( center < num ) {
+      if( centerVal < num ) {
         head = center + 1;
       }else {
         tail = center - 1;
